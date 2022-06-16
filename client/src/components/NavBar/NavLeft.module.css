@@ -1,0 +1,12 @@
+.navLeft h1 {
+  font-size: 22px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#db084e, #65fcdb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 620px) {
+  .navLeft {
+    margin-top: -20px;
+  }
+}

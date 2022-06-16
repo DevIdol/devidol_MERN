@@ -1,0 +1,37 @@
+.subTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.divider {
+  background-color: var(--clr-icon);
+  height: 20px;
+  width: 3px;
+  border-radius: 4px;
+}
+.cat {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.edit,
+.delete {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.edit{
+    color: #03c2c2;
+}
+.delete{
+    color: #fd5c3f;
+}

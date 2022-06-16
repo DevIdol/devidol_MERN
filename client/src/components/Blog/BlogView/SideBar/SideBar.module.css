@@ -1,0 +1,18 @@
+.sideBar {
+  height: 100%;
+  width: 34%;
+  position: fixed;
+  top:68px;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  transition: var(--transition);
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 980px) {
+  .sideBar {
+    position: static;
+    width: 100%;
+  }
+}

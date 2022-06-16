@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h4 {
+  font-size: 20px;
+  padding-top: 14px;
+}
+.search {
+  background-color: transparent !important;
+  margin-top: 10px;
+  border: 1px solid #adabab66;
+  width: 200px;
+  height: 38px !important;
+  border-radius: 10px !important;
+  -moz-box-shadow: inset 0 0 4px #bebaba !important;
+  -webkit-box-shadow: inset 0 0 4px #bebaba !important;
+  box-shadow: inset 0 0 4px #bebaba !important;
+}
+.search input {
+  color: gray !important;
+}
+.search svg {
+  color: #80808099;
+}

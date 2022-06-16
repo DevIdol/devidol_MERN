@@ -1,0 +1,26 @@
+.adminBlogFormGroup {
+  display: flex;
+  align-items: center;
+}
+
+.blogInput {
+  margin-top: -20px;
+  background-color: transparent;
+  color: var(--clr-font);
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  width: 100%;
+}
+.blogCat {
+  margin-top: -20px;
+  font-size: 18px;
+}
+.blogSubmit {
+  margin: 40px 0px;
+  width: 100%;
+}
+.blogUpdate {
+  margin: 40px 0px;
+  width: 100%;
+}

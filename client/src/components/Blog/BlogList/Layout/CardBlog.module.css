@@ -1,0 +1,41 @@
+.card {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 4px 4px -4px rgb(128, 128, 128, 0.9);
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+.img {
+  border-radius: 6px;
+  height: 180px;
+}
+.title {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.title:hover {
+  font-size: 18px;
+  color: var(--clr-icon);
+  cursor: pointer;
+  -webkit-line-clamp: inherit;
+  -webkit-box-orient: inherit;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 500px) {
+  .img {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img {
+    height: 140px;
+  }
+}

@@ -1,0 +1,45 @@
+.blogViewPost {
+  width: calc(100%-34%);
+  margin-right: 34%;
+  height: 100%;
+}
+.card {
+  background-color: transparent;
+  border: none;
+}
+.img {
+  height: 240px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.date {
+  color: #808080;
+  font-size: 12px;
+}
+.title {
+  font-size: 22px;
+  padding: 10px 0px;
+}
+.shareBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 980px) {
+  .blogViewPost {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    height: 180px;
+  }
+}

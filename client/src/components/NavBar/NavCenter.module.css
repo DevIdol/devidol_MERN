@@ -1,0 +1,27 @@
+.navCenter {
+  padding-top: 10px;
+  margin-left: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.item {
+  color: #808080;
+  font-size: 17px;
+  transition: var(--transition);
+}
+.item:hover {
+  color: var(--clr-icon);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 620px) {
+  .navCenter {
+    margin-left: 0;
+    position: absolute;
+    top: 30px;
+    left: 44%;
+    transform: translate(-50%, 0);
+  }
+}
