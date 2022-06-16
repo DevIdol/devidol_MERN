@@ -32,10 +32,8 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    loading === false &&
-      error &&
-      dispatch({ type: "LOGOUT" }) &&
-      navigate("/admin-login");
+    loading === false && error && dispatch({ type: "LOGOUT" });
+    loading === false && error && navigate("/admin-login");
     return () => window.removeEventListener("scroll", handleScroll);
   }, [
     prevScrollPos,

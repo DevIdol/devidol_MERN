@@ -47,11 +47,12 @@
   color: var(--clr-font);
   font-size: 20px;
   border: none;
-  padding: 20px;
   width: 100%;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .blogCat {
-  margin-top: -20px;
+  padding: 20px;
   font-size: 18px;
 }
 .blogSubmit {
@@ -71,7 +72,10 @@
   border-color: #808080;
   cursor: pointer;
 }
-.select option{
+.selectType{
+  color: gray !important;
+}
+.select option {
   background-color: var(--clr-bcg);
   cursor: pointer;
 }

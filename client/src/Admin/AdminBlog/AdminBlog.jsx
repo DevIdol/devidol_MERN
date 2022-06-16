@@ -15,7 +15,7 @@ const AdminBlog = () => {
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
   const decodedUser = jwt(user);
-  const [type, setType] = useState();
+  const [type, setType] = useState("Select Blog Type...");
   const [title, setTitle] = useState("");
   const [cat, setCat] = useState("");
   const [desc, setDesc] = useState("");
@@ -132,11 +132,12 @@ const AdminBlog = () => {
               onChange={(e) => setFile(e.target.files[0])}
             />
             <select
+              style={{ color: type === "Select Blog Type..." && "grey" }}
               value={type}
               onChange={(e) => setType(e.target.value)}
               className={styles.select}
             >
-              <option>Select...</option>
+              <option className={styles.selectType}>Select Blog Type...</option>
               <option>Tech</option>
               <option>Installation & Tool</option>
               <option>Software</option>
