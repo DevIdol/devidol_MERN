@@ -9,6 +9,7 @@
   flex-direction: row;
 }
 .subTitleLeft p {
+  text-transform: capitalize;
   font-size: 16px;
 }
 .underline {

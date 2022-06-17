@@ -25,6 +25,7 @@
   background-color: var(--clr-icon);
 }
 .cat {
+  text-transform: capitalize;
   font-size: 14px;
 }
 .title {

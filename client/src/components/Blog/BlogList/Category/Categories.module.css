@@ -17,6 +17,7 @@
 }
 
 .catLink {
+  text-transform: capitalize;
   font-size: 16px;
   border: 1px solid #808080;
   color: #808080;
