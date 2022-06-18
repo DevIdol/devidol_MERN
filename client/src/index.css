@@ -94,6 +94,12 @@ thead tr th {
   border-top: none !important;
 }
 
+.description p a span,
+.ck-content p a span {
+  border-radius: 4px !important;
+  padding: 6px !important;
+}
+
 .ck-insert-table-dropdown__grid,
 .ck-insert-table-dropdown__label,
 .ck-list-styles-list,
