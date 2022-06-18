@@ -42,7 +42,7 @@ const Installation = () => {
     setLoadmore((preValue) => preValue - 3);
   };
   const isLoadmore = reverseBlogs.length > loadmore;
-  const isLoadBack = loadmore > 3;
+  const isLoadBack = sliceBlogs.length > 3;
   return (
     <Fragment>
       <div className={styles.header}>

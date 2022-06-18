@@ -7,11 +7,10 @@ const LoadButton = ({
   onLoadBack,
   isLoadmore,
   onLoadmore,
-  isLoadBackLength,
 }) => {
   return (
     <div className={styles.load}>
-      {isLoadBackLength.length > 6 && isLoadBack && (
+      { isLoadBack && (
         <Button type="button" onClick={onLoadBack} className={styles.loadBtn}>
           Load Back
         </Button>

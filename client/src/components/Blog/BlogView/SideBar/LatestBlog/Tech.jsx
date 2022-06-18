@@ -41,7 +41,7 @@ const Tech = () => {
     setLoadmore((preValue) => preValue - 3);
   };
   const isLoadmore = reverseBlogs.length > loadmore;
-  const isLoadBack = loadmore > 3;
+  const isLoadBack = sliceBlogs.length > 3;
   return (
     <Fragment>
       <div className={styles.header}>
@@ -72,7 +72,7 @@ const Tech = () => {
             )}
             <CardBlog blogs={sliceBlogs} path="/blogs/tech" />
             <LoadButton
-              isLoadBackLength={searchQuery}
+           
               isLoadBack={isLoadBack}
               onLoadBack={onLoadBack}
               isLoadmore={isLoadmore}

@@ -48,7 +48,7 @@ const All = () => {
     setLoadmore((preValue) => preValue - 6);
   };
   const isLoadmore = reverseBlogs.length > loadmore;
-  const isLoadBack = loadmore > 6;
+  const isLoadBack = sliceBlogs.length > 6;
   useEffect(() => {
     document.title = "DevIdol | All";
   }, []);
@@ -84,7 +84,6 @@ const All = () => {
                   <Fragment>
                     <CardBlog blogs={sliceBlogs} path="/blogs/all" />
                     <LoadButton
-                      isLoadBackLength={searchQuery}
                       isLoadBack={isLoadBack}
                       onLoadBack={onLoadBack}
                       isLoadmore={isLoadmore}

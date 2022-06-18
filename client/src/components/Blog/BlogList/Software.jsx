@@ -47,7 +47,7 @@ const Software = () => {
     setLoadmore((preValue) => preValue - 6);
   };
   const isLoadmore = reverseBlogs.length > loadmore;
-  const isLoadBack = loadmore > 6;
+  const isLoadBack = sliceBlogs.length > 6;
   useEffect(() => {
     document.title = "DevIdol | Software";
   }, []);
@@ -83,7 +83,7 @@ const Software = () => {
                   <Fragment>
                     <CardBlog blogs={sliceBlogs} path="/blogs/softwares" />
                     <LoadButton
-                     isLoadBackLength={searchQuery}
+                    
                       isLoadBack={isLoadBack}
                       onLoadBack={onLoadBack}
                       isLoadmore={isLoadmore}
