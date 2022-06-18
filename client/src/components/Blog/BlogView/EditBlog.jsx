@@ -20,12 +20,25 @@ const EditBlog = ({
 }) => {
   return (
     <div className={styles.editBlog}>
-      <p onClick={onBack} style={{ color: "teal", fontWeight: "bold", cursor: "pointer" }}>
+      <p
+        onClick={onBack}
+        style={{ color: "teal", fontWeight: "bold", cursor: "pointer" }}
+      >
         <span>
           <ArrowBack />
         </span>
         Back
       </p>
+      <div className={styles.adminBlogFormGroup}>
+        <input
+          type="text"
+          placeholder="Category...(maxlength 22)"
+          value={cat}
+          className={`${styles.blogInput} ${styles.blogCat}`}
+          onChange={onChangeCat}
+          required
+        />
+      </div>
       <div className={styles.adminBlogFormGroup}>
         <input
           type="text"
@@ -38,29 +51,19 @@ const EditBlog = ({
         />
       </div>
 
-      <div className={styles.adminBlogFormGroup}>
-        <input
-          type="text"
-          placeholder="Category...(maxlength 22)"
-          value={cat}
-          className={`${styles.blogInput} ${styles.blogCat}`}
-          onChange={onChangeCat}
-          required
-        />
-      </div>
       <CKTextEditor desc={desc} onChange={onChangeDesc} />
       {error && (
-          <p
-            style={{
-              color: "tomato",
-              paddingTop: "140px",
-              textAlign: "center",
-              fontSize: "16px",
-            }}
-          >
-            {error}
-          </p>
-        )}
+        <p
+          style={{
+            color: "tomato",
+            paddingTop: "140px",
+            textAlign: "center",
+            fontSize: "16px",
+          }}
+        >
+          {error}
+        </p>
+      )}
       <Button
         onClick={handleUpdate}
         type="submit"
