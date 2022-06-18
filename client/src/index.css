@@ -44,8 +44,8 @@ body {
   transition: var(--transition);
 }
 
-thead tr th{
-  background-color: var(--clr-thead);
+thead tr th {
+  background-color: var(--clr-thead) !important;
 }
 
 .dropdown-toggle,

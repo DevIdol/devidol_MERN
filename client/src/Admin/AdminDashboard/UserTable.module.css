@@ -10,6 +10,9 @@
   padding: 0px 20px 0px 20px;
   overflow-x: auto;
 }
+.table thead tr th{
+  background-color: var(--clr-thead) !important;
+}
 .table::-webkit-scrollbar {
   width: 0;
 }
