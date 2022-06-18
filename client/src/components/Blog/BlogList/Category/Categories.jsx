@@ -49,7 +49,7 @@ const Categories = ({ catData }) => {
         >
           All
         </Link>
-        {catData.map((cat, index) => {
+        {catData.sort().map((cat, index) => {
           return (
             <Link
               key={index}
