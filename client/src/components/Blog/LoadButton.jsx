@@ -2,10 +2,16 @@ import React from "react";
 import Button from "../../Screen/Button";
 import styles from "./LoadButton.module.css";
 
-const LoadButton = ({ isLoadBack, onLoadBack, isLoadmore, onLoadmore }) => {
+const LoadButton = ({
+  isLoadBack,
+  onLoadBack,
+  isLoadmore,
+  onLoadmore,
+  isLoadBackLength,
+}) => {
   return (
     <div className={styles.load}>
-      {isLoadBack && (
+      {isLoadBackLength.length > 6 && isLoadBack && (
         <Button type="button" onClick={onLoadBack} className={styles.loadBtn}>
           Load Back
         </Button>

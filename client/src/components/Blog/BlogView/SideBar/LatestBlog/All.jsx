@@ -71,6 +71,7 @@ const All = () => {
                 )}
             <CardBlog blogs={sliceBlogs} path="/blogs/all" />
             <LoadButton
+             isLoadBackLength={searchQuery}
               isLoadBack={isLoadBack}
               onLoadBack={onLoadBack}
               isLoadmore={isLoadmore}

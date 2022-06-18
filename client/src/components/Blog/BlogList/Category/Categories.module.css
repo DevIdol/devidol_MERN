@@ -28,6 +28,7 @@
 
 .catLink.active,
 .catLink:hover {
+  text-transform: capitalize;
   color: var(--clr-bcg);
   background-color: var(--clr-icon);
   transition: var(--transition);

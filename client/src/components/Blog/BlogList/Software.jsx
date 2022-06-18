@@ -83,6 +83,7 @@ const Software = () => {
                   <Fragment>
                     <CardBlog blogs={sliceBlogs} path="/blogs/softwares" />
                     <LoadButton
+                     isLoadBackLength={searchQuery}
                       isLoadBack={isLoadBack}
                       onLoadBack={onLoadBack}
                       isLoadmore={isLoadmore}

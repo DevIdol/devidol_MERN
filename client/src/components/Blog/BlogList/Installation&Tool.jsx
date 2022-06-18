@@ -86,6 +86,7 @@ const Tool = () => {
                       path="/blogs/installations&tools"
                     />
                     <LoadButton
+                     isLoadBackLength={searchQuery}
                       isLoadBack={isLoadBack}
                       onLoadBack={onLoadBack}
                       isLoadmore={isLoadmore}

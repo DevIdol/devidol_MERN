@@ -60,19 +60,20 @@ const Installation = () => {
         ) : (
           <Fragment>
             {error && (
-                  <p
-                    style={{
-                      color: "tomato",
-                      paddingTop: "140px",
-                      textAlign: "center",
-                      fontSize: "16px",
-                    }}
-                  >
-                    {error}
-                  </p>
-                )}
+              <p
+                style={{
+                  color: "tomato",
+                  paddingTop: "140px",
+                  textAlign: "center",
+                  fontSize: "16px",
+                }}
+              >
+                {error}
+              </p>
+            )}
             <CardBlog blogs={sliceBlogs} path="/blogs/installations&tools" />
             <LoadButton
+              isLoadBackLength={searchQuery}
               isLoadBack={isLoadBack}
               onLoadBack={onLoadBack}
               isLoadmore={isLoadmore}
