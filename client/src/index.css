@@ -95,9 +95,15 @@ thead tr th {
 }
 
 .description p a span,
-.ck-content p a span {
+.ck-content p a span,
+.description h2 a span,
+.ck-content h2 a span,
+.description h3 a span,
+.ck-content h3 a span,
+.description h4 a span,
+.ck-content h4 a span {
   border-radius: 4px !important;
-  padding: 6px !important;
+  padding: 4px 6px !important;
 }
 
 .ck-insert-table-dropdown__grid,
