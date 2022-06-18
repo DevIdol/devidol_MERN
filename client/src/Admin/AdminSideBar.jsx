@@ -21,7 +21,7 @@ const AdminSideBar = () => {
   const [{ theme }] = useContext(ThemeContext);
   const activeColor = theme === "dark" ? "#65fcdb" : "#db084e";
   const activeBackground =
-    theme === "dark" ? "rgba(0,0,0,0.5)" : "rgba(224, 217, 217, 0.5)";
+    theme === "dark" ? "rgba(0,0,0,0)" : "rgba(224, 217, 217, 0.5)";
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 

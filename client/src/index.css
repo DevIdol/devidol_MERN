@@ -23,6 +23,7 @@ html {
   --clr-ani2: rgba(219, 8, 78, 0.3);
   --clr-ani3: rgba(219, 8, 78, 0.1);
   --clr-bl-bcg: #ccc;
+  --clr-thead: rgba(224, 217, 217, 0.5);
 }
 .dark {
   --clr-bcg: #030215;
@@ -34,6 +35,7 @@ html {
   --clr-ani2: rgba(101, 252, 219, 0.3);
   --clr-ani3: rgba(101, 252, 219, 0.1);
   --clr-bl-bcg: #1c1e21;
+  --clr-thead: #000;
 }
 
 body {
@@ -41,6 +43,11 @@ body {
   color: var(--clr-font);
   transition: var(--transition);
 }
+
+thead tr th{
+  background-color: var(--clr-thead);
+}
+
 .dropdown-toggle,
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
