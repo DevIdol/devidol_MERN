@@ -12,7 +12,7 @@ const PreLoader = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(true)
-    }, 2000)
+    }, 1400)
   }, [])
   return (
     <Fragment>
