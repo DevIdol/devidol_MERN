@@ -1,29 +1,26 @@
 import { createContext, useEffect, useState } from 'react'
-import { axiosInstance } from './config'
+import { axiosInstance } from './config';
 import Router from './Router/Router'
-export const CounterContext = createContext()
+export const CounterContext = createContext();
 function App() {
-  document.addEventListener('contextmenu', (e) => {
-    e.preventDefault()
-  })
-  const [count, setCount] = useState()
+  const [count, setCount] = useState();
   useEffect(() => {
     const CountData = async () => {
       try {
-        const { data: res } = await axiosInstance.get('/visitor')
-        setCount(res.counter)
+        const { data: res } = await axiosInstance.get("/visitor");
+        setCount(res.counter);
       } catch (error) {
         if (
           error.response &&
           error.response.status >= 400 &&
           error.response.status <= 500
         ) {
-          console.log(error.response.data.message)
+          console.log(error.response.data.message);
         }
       }
-    }
-    CountData()
-  }, [])
+    };
+    CountData();
+  }, []);
   return (
     <CounterContext.Provider value={count}>
       <Router />
@@ -31,4 +28,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
