@@ -7,7 +7,6 @@
   bottom: 0;
   overflow-x: hidden;
   box-shadow: 5px 0 5px -5px #808080;
-  z-index: 2;
   background-color: var(--clr-bcg);
   display: flex;
   flex-direction: column;
