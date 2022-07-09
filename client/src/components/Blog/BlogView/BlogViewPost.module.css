@@ -19,6 +19,7 @@
 .title {
   font-size: 24px;
   padding: 10px 0px;
+  line-height: 1.6;
 }
 .shareBtn {
   display: flex;

@@ -22,12 +22,12 @@ const OtherSkillData = [
       {
         id: 2,
         icon: <FaGitAlt />,
-        type: "Git/GitHub",
+        type: "Git | GitHub",
       },
       {
         id: 3,
         icon: <FaLinux />,
-        type: "Linux (Ubuntu)",
+        type: "Windows | Linux (Ubuntu)",
       },
     ],
   },
@@ -38,12 +38,12 @@ const OtherSkillData = [
       {
         id: 1,
         icon: <SiAdobexd />,
-        type: "AdobeXD (UI/UX)",
+        type: "Adobe XD",
       },
       {
         id: 2,
         icon: <SiAdobepremierepro />,
-        type: "Adobe Premiere Pro (Video Editing)",
+        type: "Adobe Premiere Pro",
       },
     ],
   },
