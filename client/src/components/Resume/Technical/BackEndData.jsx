@@ -1,7 +1,7 @@
 const BackEndData = [
   {
     id: 1,
-    name: "PHP/MySQL",
+    name: "PHP | MySQL",
     progress: 55,
     color: "#fff",
     bgcolor: "#474a8a",
@@ -15,8 +15,8 @@ const BackEndData = [
   },
   {
     id: 3,
-    name: "NodeJS/MongoDB",
-    progress: 45,
+    name: "NodeJS | Express | MongoDB",
+    progress: 50,
     color: "#fff",
     bgcolor: "#3c973a",
   },
