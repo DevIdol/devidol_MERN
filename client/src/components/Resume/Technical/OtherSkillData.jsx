@@ -8,7 +8,6 @@ import {
 } from "react-icons/si";
 import { FaGlobeEurope } from "react-icons/fa";
 
-
 const OtherSkillData = [
   {
     id: 1,
