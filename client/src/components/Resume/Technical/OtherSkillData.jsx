@@ -1,7 +1,7 @@
 import { FaGitAlt, FaLinux } from "react-icons/fa";
 
 import {
-  SiAdobexd,
+  SiAdobephotoshop,
   SiAdobepremierepro,
   SiFirebase,
   SiAiohttp,
@@ -37,8 +37,8 @@ const OtherSkillData = [
     skill: [
       {
         id: 1,
-        icon: <SiAdobexd />,
-        type: "Adobe XD",
+        icon: <SiAdobephotoshop />,
+        type: "Adobe Photoshop",
       },
       {
         id: 2,
