@@ -1,7 +1,7 @@
-import { createContext, useEffect, useState } from 'react'
-import { axiosInstance } from './config'
-import Router from './Router/Router'
-export const CounterContext = createContext()
+import { createContext, useEffect, useState } from 'react';
+import { axiosInstance } from './config';
+import Router from './Router/Router';
+export const CounterContext = createContext();
 function App() {
   const [count, setCount] = useState()
   useEffect(() => {
