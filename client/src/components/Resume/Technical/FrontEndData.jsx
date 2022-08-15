@@ -29,10 +29,11 @@ const FrontEndData = [
   },
   {
     id: 5,
-    name: "React | Next.js",
+    name: "React | Next.js | Redux",
     progress: 55,
     color: "#000",
-    bgcolor: "#61dbfb",
+    bgcolor:
+      "linear-gradient(90deg, rgba(97,219,251,1) 38%, rgba(128,0,128,1) 80%)",
   },
   {
     id: 6,

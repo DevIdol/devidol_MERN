@@ -28,7 +28,7 @@ const AddNewUser = () => {
   }, []);
   return (
     <div className={styles.adminDashboard}>
-      <div className={styles.title} style={{ top: visible ? "70px" : "-80px" }}>
+      <div className={styles.title} style={{ top: visible ? "80px" : "-80px" }}>
         <h1>Add New User</h1>
       </div>
       <AddUserInput />

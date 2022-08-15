@@ -27,7 +27,7 @@ const SideBar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <div className={styles.sideBar} style={{ top: visible ? "68px" : "-1px" }}>
+    <div className={styles.sideBar} style={{ top: visible ? "78px" : "-1px" }}>
       <Container>
         <SideBarNav />
       </Container>

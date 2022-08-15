@@ -11,7 +11,7 @@ import { FaGlobeEurope } from "react-icons/fa";
 const OtherSkillData = [
   {
     id: 1,
-    title: "Cloud & Version Control System",
+    title: "OS, Cloud & Version Control System",
     skill: [
       {
         id: 1,

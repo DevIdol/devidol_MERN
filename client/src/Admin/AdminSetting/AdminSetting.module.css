@@ -11,7 +11,7 @@
   left: 250px;
   background-color: var(--clr-navbar);
   box-shadow: 0 4px 4px -4px rgb(128, 128, 128, 0.4);
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 .title h1 {
   font-size: 20px;
   padding-left: 20px;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 .title span {
   color: #ff6347;

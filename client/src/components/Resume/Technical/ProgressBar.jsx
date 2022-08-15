@@ -4,7 +4,7 @@ import classes from "./ProgressBar.module.css";
 const ProgressBar = ({name, bgcolor, progress, color }) => {
   const Progressbar = {
     width: `${progress}%`,
-    backgroundColor: bgcolor,
+    background: bgcolor,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
