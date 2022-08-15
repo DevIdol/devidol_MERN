@@ -1,5 +1,5 @@
 .adminSettingContainer {
-  padding-top: 70px;
+  padding-top: 80px;
   width: (100% - 250px);
   margin-left: 250px;
   height: 100%;
@@ -31,6 +31,7 @@
 }
 .settingForm {
   padding: 40px 20px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
 }

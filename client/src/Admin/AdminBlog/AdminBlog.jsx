@@ -112,7 +112,7 @@ const AdminBlog = () => {
   );
   return (
     <div className={styles.adminBlogSection}>
-      <div className={styles.title} style={{ top: visible ? "70px" : "-80px" }}>
+      <div className={styles.title} style={{ top: visible ? "80px" : "-90px" }}>
         <h1>Blog</h1>
       </div>
 

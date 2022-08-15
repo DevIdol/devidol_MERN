@@ -12,6 +12,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow: auto;
 }
 .light {
   --clr-bcg: #fff;
@@ -36,6 +37,28 @@ html {
   --clr-ani3: rgba(101, 252, 219, 0.1);
   --clr-bl-bcg: #1c1e21;
   --clr-thead: #000;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ccc;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
 }
 
 body {

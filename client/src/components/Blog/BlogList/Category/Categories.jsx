@@ -32,7 +32,7 @@ const Categories = ({ catData }) => {
   return (
     <div
       className={styles.categories}
-      style={{ top: visible ? "64px" : "-80px" }}
+      style={{ top: visible ? "75px" : "-90px" }}
     >
       <Container>
         <Link

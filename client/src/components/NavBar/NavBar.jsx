@@ -26,7 +26,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className={styles.navBar} style={{top: visible ? 0 : '-80px'}}>
+    <nav className={styles.navBar} style={{top: visible ? 0 : '-90px'}}>
       <NavLeft/>
       <NavCenter/>
       <NavRight/>

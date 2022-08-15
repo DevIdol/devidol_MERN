@@ -51,7 +51,7 @@ const AdminDashboard = () => {
   }, []);
   return (
     <div className={styles.adminDashboard}>
-      <div className={styles.title} style={{ top: visible ? "70px" : "-80px" }}>
+      <div className={styles.title} style={{ top: visible ? "80px" : "-90px" }}>
         <h1>Dashboard</h1>
       </div>
       <Container className={styles.container}>

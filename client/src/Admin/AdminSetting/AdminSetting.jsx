@@ -113,7 +113,7 @@ const AdminSetting = () => {
   );
   return (
     <div className={styles.adminSettingContainer}>
-      <div className={styles.title} style={{ top: visible ? "70px" : "-80px" }}>
+      <div className={styles.title} style={{ top: visible ? "80px" : "-90px" }}>
         <h1>Update Your Account</h1>
       </div>
 

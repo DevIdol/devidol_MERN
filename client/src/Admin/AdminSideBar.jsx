@@ -70,7 +70,7 @@ const AdminSideBar = () => {
                 ? `${styles.adminSideBar} ${styles.active}`
                 : styles.adminSideBar
             }
-            style={{ top: visible ? "70px" : 0 }}
+            style={{ top: visible ? "80px" : 0 }}
           >
             <Link to="/admin/account" className={styles.adminSideBarHeader}>
               <div className={styles.adminSideBarHeaderTop}>
