@@ -161,8 +161,8 @@ thead tr th {
 }
 
 .description blockquote::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  width: 12px;
+  height: 6px;
 }
 
 .description blockquote {
