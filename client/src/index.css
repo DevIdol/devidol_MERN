@@ -124,7 +124,17 @@ thead tr th {
 .description h3 a span,
 .ck-content h3 a span,
 .description h4 a span,
-.ck-content h4 a span {
+.ck-content h4 a span,
+.description p span,
+.ck-content p span,
+.description p a span,
+.ck-content p a span,
+.description h2 span,
+.ck-content h2 span,
+.description h3 span,
+.ck-content h3 span,
+.description h4 span,
+.ck-content h4 span {
   border-radius: 4px !important;
   padding: 4px 6px !important;
 }
