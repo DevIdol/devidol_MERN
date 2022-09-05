@@ -127,16 +127,18 @@ thead tr th {
 .ck-content h4 a span,
 .description p span,
 .ck-content p span,
-.description p a span,
-.ck-content p a span,
 .description h2 span,
 .ck-content h2 span,
 .description h3 span,
 .ck-content h3 span,
 .description h4 span,
-.ck-content h4 span {
+.ck-content h4 span,
+.description li span,
+.ck-content li span,
+.description ol span,
+.ck-content ol span {
   border-radius: 4px !important;
-  padding: 4px 6px !important;
+  padding: 3px 6px !important;
 }
 
 .ck-insert-table-dropdown__grid,
