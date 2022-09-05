@@ -87,6 +87,9 @@
   color: var(--clr-icon);
   font-weight: 500;
 }
+.checkbox{
+  accent-color: var(--clr-icon);
+}
 
 @media screen and (max-width: 960px) {
   .adminSettingContainer {

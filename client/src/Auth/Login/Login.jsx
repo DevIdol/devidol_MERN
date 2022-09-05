@@ -102,7 +102,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <div className={styles.showPass}>
-          <input onClick={showPassword} type="checkbox" />
+          <input className={styles.checkbox} onClick={showPassword} type="checkbox" />
           <span>Show Password</span>
         </div>
         <Button className={styles.button} disabled={!formIsValid}>

@@ -175,7 +175,7 @@ const AdminSetting = () => {
           required
         />
         <div className={styles.showPass}>
-          <input onClick={showPassword} type="checkbox" />
+          <input className={styles.checkbox} onClick={showPassword} type="checkbox" />
           <span>Show Password</span>
         </div>
         <Button

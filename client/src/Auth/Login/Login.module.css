@@ -14,6 +14,9 @@
 .input {
   width: 100%;
 }
+.checkbox{
+  accent-color: var(--clr-icon);
+}
 .showPass {
   padding: 10px 0 0 4px;
   display: flex;

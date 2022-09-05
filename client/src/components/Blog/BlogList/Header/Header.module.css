@@ -51,11 +51,18 @@
   -webkit-box-shadow: inset 0 0 4px #bebaba !important;
   box-shadow: inset 0 0 4px #bebaba !important;
 }
+.search:hover .search:focus {
+  border: 1px solid var(--clr-icon);
+}
 .search input {
   color: gray !important;
 }
 .search svg {
   color: #80808099;
+}
+.search:hover svg,
+.search input:focus svg {
+  color: var(--clr-icon);
 }
 @media screen and (max-width: 480px) {
   .header {
