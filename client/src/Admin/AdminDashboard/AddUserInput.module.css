@@ -58,6 +58,9 @@
 .showPass span {
   font-size: 12px;
 }
+.checkbox{
+  accent-color: var(--clr-icon);
+}
 .button {
   margin-top: 40px;
 }
