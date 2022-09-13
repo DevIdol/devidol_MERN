@@ -172,10 +172,13 @@ thead tr th {
   border-radius: 2px !important;
   height: 100%;
 }
-
+.description blockquote::-webkit-scrollbar {
+  width: 12px;
+  height: 0px;
+}
 .description blockquote:hover::-webkit-scrollbar {
   width: 12px;
-  height: 8px;
+  height: 6px;
 }
 
 .description blockquote {
