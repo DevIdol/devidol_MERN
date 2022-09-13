@@ -173,9 +173,9 @@ thead tr th {
   height: 100%;
 }
 
-.description blockquote::-webkit-scrollbar {
+.description blockquote:hover::-webkit-scrollbar {
   width: 12px;
-  height: 6px;
+  height: 8px;
 }
 
 .description blockquote {
