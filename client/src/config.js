@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const axiosInstance = axios.create({
-  baseURL: 'http://devidol.mm.vercel.app/api/v1',
+  baseURL: 'http://devidol.vercel.app/api/v1',
 })
