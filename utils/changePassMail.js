@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 import path from "path";
 import hbs from "nodemailer-express-handlebars";
 import { fileURLToPath } from "url";
-export const SendMail = async (email, subject, text) => {
+export const ChangePassMail = async (email, subject, text) => {
   try {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
@@ -32,7 +32,7 @@ export const SendMail = async (email, subject, text) => {
       from: `DevIdol 🛍️ <${process.env.USER}>`,
       to: "devidol.mm@gmail.com",
       subject: subject,
-      template: "email",
+      template: "changepass",
       context: {
         title: "DevIdol Account",
         text: text,

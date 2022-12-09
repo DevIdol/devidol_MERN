@@ -2,7 +2,8 @@ import Token from '../models/Token.js'
 import User from '../models/User.js'
 import crypto from 'crypto'
 import { createError } from '../utils/error.js'
-import { SendMail } from '../utils/SendMail.js'
+import { ChangePassMail } from '../utils/changePassMail.js'
+
 /*==================
    Forgot Password
 ==================== */
@@ -21,7 +22,7 @@ export const forgotPassword = async (req, res, next) => {
       }).save()
     }
     const url = `${process.env.BASE_URL}/password-reset/${user._id}/${token.token}`
-    await SendMail(user.email, 'Password Reset', url)
+    await ChangePassMail(user.email, 'Password Reset', url)
     res.status(200).send({ message: 'Password reset link sent successfully!' })
   } catch (error) {
     next(createError(500, "Internet Connection Fail!"))
