@@ -10,7 +10,7 @@ import { axiosInstance } from "../../config";
 import { debounce } from "../../utilities/helpers";
 
 const AdminSetting = () => {
-  const PFURL = "https://devidol.herokuapp.com/images/";
+  const PFURL ="https://devidol-mm.cyclic.app/images/";
   const [loading, setLoading] = useState(false);
   const { user, dispatch } = useContext(AuthContext);
   const decodedUser = jwt(user);

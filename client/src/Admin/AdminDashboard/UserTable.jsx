@@ -11,7 +11,7 @@ import { useConfirm } from "material-ui-confirm";
 import { axiosInstance } from "../../config";
 const UserTable = () => {
   const confirm = useConfirm();
-  const PF = "https://devidol.herokuapp.com/images/";
+  const PF = "https://devidol-mm.cyclic.app/images/";
   const [{ theme }] = useContext(ThemeContext);
   const loadingColor = theme === "dark" ? "#65fcdb" : "#db084e";
   const navigate = useNavigate();

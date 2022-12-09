@@ -12,7 +12,7 @@ import { debounce } from "../utilities/helpers";
 const AdminSideBar = () => {
   const confirm = useConfirm();
   const navigate = useNavigate();
-  const PFURL = "https://devidol.herokuapp.com/images/";
+  const PFURL = "https://devidol-mm.cyclic.app/images/";
   const { user, dispatch } = useContext(AuthContext);
   const decodedUser = jwt(user);
   const [isOpen, setIsOpen] = useState(false);
