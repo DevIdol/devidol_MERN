@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "type": "module",
   "dependencies": {
@@ -17,8 +17,7 @@
     "nodemailer": "^6.7.5"
   },
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn install && npm run build"
+    "start": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
