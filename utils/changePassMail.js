@@ -29,7 +29,7 @@ export const ChangePassMail = async (email, subject, text) => {
     transporter.use("compile", hbs(handlebarOptions));
 
     var mailOptions = {
-      from: `DevIdol 🛍️ <${process.env.USER}>`,
+      from: `DevIdol 👨‍💻 <${process.env.USER}>`,
       to: "devidol.mm@gmail.com",
       subject: subject,
       template: "changepass",
