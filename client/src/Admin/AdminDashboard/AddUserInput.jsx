@@ -7,7 +7,7 @@ import { Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { axiosInstance } from "../../config";
 const AddUserInput = () => {
-  const PFURL = "https://devidol.herokuapp.com/images/";
+  const PFURL ="https://devidol-mm.cyclic.app/images/";
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState("");
