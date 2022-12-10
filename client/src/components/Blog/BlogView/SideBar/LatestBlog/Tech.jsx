@@ -20,6 +20,8 @@ const Tech = () => {
       return post;
     } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
       return post;
+    } else if (post.cat.toLowerCase().includes(query.toLowerCase())) {
+      return post;
     }
   });
 
@@ -72,7 +74,6 @@ const Tech = () => {
             )}
             <CardBlog blogs={sliceBlogs} path="/blogs/tech" />
             <LoadButton
-           
               isLoadBack={isLoadBack}
               onLoadBack={onLoadBack}
               isLoadmore={isLoadmore}

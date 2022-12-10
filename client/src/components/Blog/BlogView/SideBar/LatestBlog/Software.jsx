@@ -20,6 +20,8 @@ const Software = () => {
       return post;
     } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
       return post;
+    } else if (post.cat.toLowerCase().includes(query.toLowerCase())) {
+      return post;
     }
   });
 
@@ -72,7 +74,6 @@ const Software = () => {
             )}
             <CardBlog blogs={sliceBlogs} path="/blogs/softwares" />
             <LoadButton
-             
               isLoadBack={isLoadBack}
               onLoadBack={onLoadBack}
               isLoadmore={isLoadmore}

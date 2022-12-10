@@ -9,7 +9,7 @@ const FrontEndData = [
   {
     id: 2,
     name: "CSS3 | SCSS",
-    progress: 75,
+    progress:70,
     color: "#fff",
     bgcolor: "#264de4",
   },
@@ -23,14 +23,14 @@ const FrontEndData = [
   {
     id: 4,
     name: "JQuery",
-    progress: 55,
+    progress: 60,
     color: "#fff",
     bgcolor: "#0769ad",
   },
   {
     id: 5,
     name: "React | Next.js | Redux",
-    progress: 55,
+    progress: 60,
     color: "#000",
     bgcolor:
       "linear-gradient(90deg, rgba(97,219,251,1) 38%, rgba(128,0,128,1) 80%)",
@@ -38,7 +38,7 @@ const FrontEndData = [
   {
     id: 6,
     name: "Flutter | Dart",
-    progress: 60,
+    progress: 55,
     color: "#fff",
     bgcolor: "#0000ff",
   },

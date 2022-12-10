@@ -21,6 +21,8 @@ const Installation = () => {
       return post;
     } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
       return post;
+    } else if (post.cat.toLowerCase().includes(query.toLowerCase())) {
+      return post;
     }
   });
 

@@ -19,6 +19,8 @@ const All = () => {
       return post;
     } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
       return post;
+    } else if (post.cat.toLowerCase().includes(query.toLowerCase())) {
+      return post;
     }
   });
 
@@ -58,17 +60,17 @@ const All = () => {
         ) : (
           <Fragment>
             {error && (
-                  <p
-                    style={{
-                      color: "tomato",
-                      paddingTop: "140px",
-                      textAlign: "center",
-                      fontSize: "16px",
-                    }}
-                  >
-                    {error}
-                  </p>
-                )}
+              <p
+                style={{
+                  color: "tomato",
+                  paddingTop: "140px",
+                  textAlign: "center",
+                  fontSize: "16px",
+                }}
+              >
+                {error}
+              </p>
+            )}
             <CardBlog blogs={sliceBlogs} path="/blogs/all" />
             <LoadButton
               isLoadBack={isLoadBack}
