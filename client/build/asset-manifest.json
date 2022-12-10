@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65245266.css",
-    "main.js": "/static/js/main.18c58e28.js",
+    "main.css": "/static/css/main.179b6b96.css",
+    "main.js": "/static/js/main.5fecfa26.js",
     "static/media/culibrary.apk": "/static/media/culibrary.05ea43dc421524d5f200.apk",
     "static/media/five.png": "/static/media/five.d1acf7334717c902f96c.png",
     "static/media/one.png": "/static/media/one.1cc4f60e9678bb3baf3e.png",
@@ -13,11 +13,11 @@
     "static/media/Resume.pdf": "/static/media/Resume.d5e4972ba3d9947a5797.pdf",
     "static/media/success.png": "/static/media/success.2d8556f5eb6953ffc391.png",
     "index.html": "/index.html",
-    "main.65245266.css.map": "/static/css/main.65245266.css.map",
-    "main.18c58e28.js.map": "/static/js/main.18c58e28.js.map"
+    "main.179b6b96.css.map": "/static/css/main.179b6b96.css.map",
+    "main.5fecfa26.js.map": "/static/js/main.5fecfa26.js.map"
   },
   "entrypoints": [
-    "static/css/main.65245266.css",
-    "static/js/main.18c58e28.js"
+    "static/css/main.179b6b96.css",
+    "static/js/main.5fecfa26.js"
   ]
 }
