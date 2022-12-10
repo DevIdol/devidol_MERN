@@ -13,7 +13,7 @@ const MyProject = () => {
   const [projects, setProjects] = useState(<AllProject />);
   const [isActive, setIsActive] = useState("all");
   useEffect(() => {
-    document.title = "DevHub | Projects";
+    document.title = "DevIdol | Projects";
   }, []);
   return (
     <div style={{ paddingTop: "90px", textAlign: "center" }}>
