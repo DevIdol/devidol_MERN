@@ -3,7 +3,6 @@ import { Col } from "react-bootstrap";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { FaMobileAlt, FaUserGraduate } from "react-icons/fa";
 import AboutInfo from "./AboutInfo";
-import resume from "../../../assets/storage/Resume.pdf";
 import styles from "./AboutRight.module.css";
 const AboutRight = () => {
   return (
@@ -20,7 +19,7 @@ const AboutRight = () => {
           />
 
           <AboutInfo
-            icon={ <MdEmail />}
+            icon={<MdEmail />}
             content="devidol.mm@gmail.com"
             href="mailto:devidol.mm@gmail.com"
             target="__back"
@@ -42,7 +41,12 @@ const AboutRight = () => {
           />
         </div>
         <div className={styles.download}>
-          <a href={resume} download>
+          <a
+            href="https://drive.google.com/file/d/15_DqIiumggDwd58TPeSI11By1eKSNCsa/view"
+            download
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
             Get My CV
           </a>
         </div>

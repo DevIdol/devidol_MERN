@@ -16,7 +16,6 @@ import three from "../../assets/project/three.png";
 import two from "../../assets/project/two.png";
 import one from "../../assets/project/one.png";
 import blog from "../../assets/project/react&blog.jpeg";
-import apk from "../../assets/storage/culibrary.apk";
 
 const language = [
   <ImHtmlFive />,
@@ -37,7 +36,8 @@ const ProjectData = [
         "Quae esse totam blanditiis modi aspernatur! Libero aspernatur autem voluptatibus modi doloremque perspiciatis rem id, deleniti accusantium minus nam ea quae vero!",
       language: [<RiFlutterFill />, <SiFirebase />],
       link: "https://github.com/DevIdol/culibrary_mobileApp_sourceCode",
-      download: apk,
+      download:
+        "https://drive.google.com/u/2/uc?id=1QXjsNX_qQ8BMkdE4UkCQI_hbcEMZA6eJ&export=download",
     },
   },
   {
@@ -120,7 +120,8 @@ const ProjectData = [
         "Quae esse totam blanditiis modi aspernatur! Libero aspernatur autem voluptatibus modi doloremque perspiciatis rem id, deleniti accusantium minus nam ea quae vero!",
       language: [<FaReact />, <FaNodeJs />, <DiMongodb />, "ex"],
       link: "https://github.com/DevIdol/MERN_PROJECT",
-      download: "https://github.com/DevIdol/MERN_PROJECT/archive/refs/heads/main.zip",
+      download:
+        "https://github.com/DevIdol/MERN_PROJECT/archive/refs/heads/main.zip",
     },
   },
 ];

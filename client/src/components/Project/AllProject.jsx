@@ -61,6 +61,8 @@ const AllProject = () => {
                         href={project.items.download}
                         download
                         className={styles.down}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
                       >
                         {down}
                       </a>
