@@ -30,6 +30,7 @@ const ContactForm = () => {
     if (formIsValid) {
       SendMessage({ name, email, message, setSend })
         .then(() => {
+          setLoading(false)
           toast.success(`Your message sent successfully.`, {
             position: "bottom-left",
             autoClose: 2000,
