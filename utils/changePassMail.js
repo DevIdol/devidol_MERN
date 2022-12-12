@@ -1,5 +1,5 @@
-import nodemailer from "nodemailer";
 import path from "path";
+import nodemailer from "nodemailer";
 import hbs from "nodemailer-express-handlebars";
 import { fileURLToPath } from "url";
 export const ChangePassMail = async (email, subject, text) => {

@@ -8,6 +8,7 @@ import { connect, disconnection } from './db.js'
 import authRoute from './routes/auth.js'
 import userRouter from './routes/users.js'
 import postRouter from './routes/posts.js'
+import contactRouter from './routes/contact.js'
 import cookieParser from 'cookie-parser'
 import passwordResetRoute from './routes/password_reset.js'
 import visitorRoute from './routes/visitor.js'
@@ -49,6 +50,7 @@ app.use('/api/v1/users', userRouter)
 app.use('/api/v1/password-reset', passwordResetRoute)
 app.use('/api/v1/posts', postRouter)
 app.use('/api/v1/visitor', visitorRoute)
+app.use('/api/v1', contactRouter);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500
