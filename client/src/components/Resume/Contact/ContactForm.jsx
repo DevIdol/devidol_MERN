@@ -1,78 +1,87 @@
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import React, { useState } from "react";
 import Input from "../../../Screen/Input";
 import Button from "../../../Screen/Button";
 import styles from "./ContactForm.module.css";
 import { Spinner } from "react-bootstrap";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import { SendMessage } from "./SendMessage";
 const ContactForm = () => {
-  const [successAlt, setSuccessAlt] = useState(undefined);
-  const [errorAlt, setErrorAlt] = useState(undefined);
+  const [, setSend] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [formIsValid, setFormIsValid] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleForm = useRef();
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      setFormIsValid(
+        name.length > 2 && email.includes("@") && message.length > 6
+      );
+    }, 1000);
+
+    return () => clearTimeout(identifier);
+  }, [name, email, message]);
+
   const onSubmitEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs
-      .sendForm(
-        "service_qc9qyid",
-        "template_u1hmpi5",
-        handleForm.current,
-        "xb9SX1IiNXCEYTS3c"
-      )
-      .then(
-        (result) => {
-          result && setSuccessAlt(true);
-          result && setLoading(false);
-          result &&
-            setTimeout(() => {
-              setSuccessAlt(false);
-            }, 3200);
-        },
-        (error) => {
-          error && setErrorAlt(true);
-          error && setLoading(false);
-          error &&
-            setTimeout(() => {
-              setErrorAlt(false);
-            }, 3200);
-        }
-      );
-    e.target.reset();
+    if (formIsValid) {
+      SendMessage({ name, email, message, setSend })
+        .then(() => {
+          toast.success(`Your message sent successfully.`, {
+            position: "bottom-left",
+            autoClose: 2000,
+          });
+          setName("");
+          setEmail("");
+          setMessage("");
+          setSend();
+        })
+        .catch((error) => {
+          setLoading(false);
+          toast.error(`Internet connection failed!.`, {
+            position: "bottom-left",
+            autoClose: 2000,
+          });
+          setName("");
+          setEmail("");
+          setMessage("");
+          setSend();
+        });
+    }
   };
 
   return (
     <div className={styles["contact-form"]}>
-      <form className={styles.form} ref={handleForm} onSubmit={onSubmitEmail}>
-        {successAlt && (
-          <p style={{ color: "teal", fontSize: "16px" }}>Success!</p>
-        )}
-        {errorAlt && (
-          <p style={{ color: "tomato", fontSize: "16px" }}>
-            Internet Connection Fail!
-          </p>
-        )}
-
+      <form className={styles.form} onSubmit={onSubmitEmail}>
         <Input
           className={styles["input-form"]}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           type="text"
-          name="name"
           placeholder="Enter Your Name"
+          required
         />
         <Input
           className={styles["input-form"]}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
-          name="email"
           placeholder="Enter Your Email"
+          required
         />
         <textarea
           className={styles.textarea}
-          name="message"
-          placeholder="Enter Your Message"
-          rows="6"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          type="text"
+          placeholder="How can I help you?"
+          rows={4}
           required
         />
-        <Button className={styles.button} type="submit">
+        <Button className={styles.button} type="submit" disabled={!formIsValid}>
           {loading ? <Spinner animation="border" /> : "Send Mail"}
         </Button>
       </form>

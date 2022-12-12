@@ -20,11 +20,13 @@ import { AuthContext } from "../Context/AuthContext/AuthContext";
 import { useContext } from "react";
 import MyProject from "../components/Project/MyProject";
 import Tech from "../components/Blog/BlogList/Tech";
+import { ToastContainer } from "react-toastify";
 
 const Router = () => {
   const { user } = useContext(AuthContext);
   return (
     <BrowserRouter>
+      <ToastContainer />
       <NavBar />
       <Routes>
         <Route path="/" element={<Resume />} />
