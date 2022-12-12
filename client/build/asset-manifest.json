@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1d311879.css",
-    "main.js": "/static/js/main.badc4952.js",
+    "main.js": "/static/js/main.6cc418f4.js",
     "static/media/culibrary.apk": "/static/media/culibrary.05ea43dc421524d5f200.apk",
     "static/media/five.png": "/static/media/five.d1acf7334717c902f96c.png",
     "static/media/one.png": "/static/media/one.1cc4f60e9678bb3baf3e.png",
@@ -14,10 +14,10 @@
     "static/media/success.png": "/static/media/success.2d8556f5eb6953ffc391.png",
     "index.html": "/index.html",
     "main.1d311879.css.map": "/static/css/main.1d311879.css.map",
-    "main.badc4952.js.map": "/static/js/main.badc4952.js.map"
+    "main.6cc418f4.js.map": "/static/js/main.6cc418f4.js.map"
   },
   "entrypoints": [
     "static/css/main.1d311879.css",
-    "static/js/main.badc4952.js"
+    "static/js/main.6cc418f4.js"
   ]
 }
