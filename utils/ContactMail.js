@@ -39,7 +39,7 @@ const EmailSender = ({ name, email, message }) => {
   const options = {
     from: `DevIdol 👨‍💻 <${email}>`,
     to: "devidol.mm@gmail.com",
-    subject: `Messager From ${email}`,
+    subject: `Message From ${email}`,
     template: "contactmail",
     context: {
       name: name,
